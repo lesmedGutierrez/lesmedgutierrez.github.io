@@ -54,7 +54,6 @@ header {
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav-logo {
@@ -69,6 +68,7 @@ header {
   list-style: none;
   display: flex;
   gap: 1.75rem;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -83,6 +83,7 @@ header {
 }
 
 .btn-download {
+  margin-left: 2rem;
   font-size: 0.85rem;
   border: 1px solid var(--accent);
   color: var(--accent);
@@ -101,7 +102,8 @@ header {
 .section {
   max-width: 860px;
   margin: 0 auto;
-  padding: 5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
+  scroll-margin-top: 70px;
 }
 
 .section + .section {
@@ -119,18 +121,26 @@ header {
 /* ── Hero ── */
 .hero {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-header {
+  display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .hero-content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .hero-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
   object-fit: cover;
   border: 3px solid var(--border);
   flex-shrink: 0;
@@ -382,8 +392,9 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .hero { flex-direction: column-reverse; align-items: flex-start; gap: 1.5rem; }
-  .hero-photo { width: 100px; height: 100px; }
+  .hero { gap: 1.5rem; }
+  .hero-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .hero-photo { width: 125px; height: 125px; }
   .hero h1 { font-size: 1.9rem; }
   .nav-links { gap: 1rem; }
   .resume-entry-header { flex-direction: column; gap: 0.1rem; }
