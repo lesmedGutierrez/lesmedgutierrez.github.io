@@ -82,6 +82,21 @@ header {
   text-decoration: none;
 }
 
+.btn-download {
+  font-size: 0.85rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+}
+
 /* ── Sections ── */
 .section {
   max-width: 860px;
@@ -102,6 +117,25 @@ header {
 }
 
 /* ── Hero ── */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  flex-shrink: 0;
+}
+
 .hero h1 {
   font-size: 2.6rem;
   font-weight: 700;
@@ -348,6 +382,8 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
+  .hero { flex-direction: column-reverse; align-items: flex-start; gap: 1.5rem; }
+  .hero-photo { width: 100px; height: 100px; }
   .hero h1 { font-size: 1.9rem; }
   .nav-links { gap: 1rem; }
   .resume-entry-header { flex-direction: column; gap: 0.1rem; }
