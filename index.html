@@ -7,6 +7,7 @@
   <title>Lesmed Gutierrez Arcia — Data & Solution Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
       </ul>
-      <a class="btn-download" href="resume.pdf" target="_blank">Download PDF Resume</a>
+      <button class="btn-download" onclick="downloadPDF()">Download PDF Resume</button>
     </nav>
   </header>
 
@@ -183,5 +184,30 @@
     <p>© 2026 Lesmed Gutierrez Arcia · Costa Rica</p>
   </footer>
 
+  <script>
+    function downloadPDF() {
+      const btn = document.querySelector('.btn-download');
+      const header = document.querySelector('header');
+      btn.textContent = 'Generating…';
+      btn.disabled = true;
+      header.style.display = 'none';
+
+      html2pdf()
+        .set({
+          margin: [12, 14, 12, 14],
+          filename: 'Lesmed_Gutierrez_Resume.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        })
+        .from(document.body)
+        .save()
+        .then(() => {
+          header.style.display = '';
+          btn.textContent = 'Download PDF Resume';
+          btn.disabled = false;
+        });
+    }
+  </script>
 </body>
 </html>
