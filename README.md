@@ -71,3 +71,9 @@ Instituto Tecnológico de Costa Rica
 
 **Associate Cloud Engineer Certification** — 2020
 Google Cloud Platform
+
+**[AWS Certified Data Engineer – Associate](https://www.credly.com/badges/6b345b2f-df8d-4c7b-b24c-84c15a805459)** — 2026
+Amazon Web Services
+
+**[Databricks Certified Associate Developer for Apache Spark](https://www.credential.net/bed69781-018f-470c-8f46-4037674b6e85)** — 2026
+Databricks Academy
