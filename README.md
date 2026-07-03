@@ -1,7 +1,6 @@
-# Lesmed Gutierrez — Data & Solution Engineer
+# Lesmed Gutierrez Arcia — Data & Solution Engineer
 
 📍 Costa Rica
-📞 (506) 86607871
 📧 lesmedgutierrez@outlook.com · lesmedgutiar.16@gmail.com
 🔗 [linkedin.com/in/lesmedgutierrez](https://linkedin.com/in/lesmedgutierrez)
 🐙 [github.com/lesmedgutierrez](https://github.com/lesmedgutierrez)
@@ -10,7 +9,7 @@
 
 ## About
 
-Data Engineer and Solution Engineer with 10+ years of experience in software development, data integration, and cloud-based solutions. Skilled in building and maintaining data pipelines, automating data workflows, and integrating complex systems across multiple platforms. Proficient in Python, SQL, PySpark, and Google Cloud Platform with a strong background in data wrangling, analytics, and production-grade deployments. Proven ability to collaborate across engineering, product, and support teams to deliver reliable, scalable solutions.
+Data Engineer and Solution Engineer with 10+ years of experience building data pipelines, cloud integrations, and scalable workflows. Proficient in Python, SQL, PySpark, and cloud platforms including GCP and AWS. Holds GCP Associate Cloud Engineer, AWS Certified Data Engineer – Associate, and Databricks Certified Associate Developer for Apache Spark certifications. Proven collaborator across engineering, product, and support teams.
 
 ---
 
@@ -18,10 +17,10 @@ Data Engineer and Solution Engineer with 10+ years of experience in software dev
 
 | Category | Technologies |
 |---|---|
-| Languages | Python, SQL, PySpark, TypeScript, ABAP |
+| Languages | Python, SQL, PySpark |
 | Data & Streaming | Apache Flink, Kafka, Airflow |
-| Cloud & Infrastructure | Google Cloud Platform, BigQuery |
-| Tools & Automation | Make.com, Angular, Tableau, Git |
+| Cloud & Infrastructure | Google Cloud Platform, Amazon Web Services |
+| Tools & Automation | Make.com |
 
 ---
 
@@ -32,7 +31,7 @@ Data Engineer and Solution Engineer with 10+ years of experience in software dev
 
 - Lead architect and implementer for customer and third-party system integrations, combining in-house codebases with no-code automation platforms to deliver scalable, maintainable workflows.
 - Led multi-year effort to migrate 20+ customers from legacy inbound architecture to a modern inbound pipeline, improving reliability and scalability.
-- Own the full engineering lifecycle for internal repositories — design, development, testing, deployment, and long-term maintenance.
+- Own the full engineering lifecycle for internal repositories design, development, testing, deployment, and long-term maintenance.
 - Serve as primary escalation point for complex data-parsing and integration issues, collaborating with support and product teams.
 - Maintain system uptime through on-call rotations and structured incident response.
 - Deliver backend features using Angular and TypeScript in support of cross-team product initiatives.
